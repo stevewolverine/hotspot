@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!--
+*PCDOSoluciones*
+Bootstrap 3.3.6
+© 2018 Gerardo Hernandez
+© 2018 Gerardo Hernandez. Todos los derechos reservados.
+Copyright &copy; 2008 2018 - PCDOSoluciones
+Copr. PCDOSoluciones. Todos los derechos reservados.
+Pijijiapan, Chiapas; Mexico
+-->
+<head>
+
+    $(if refresh-timeout)
+    <meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+    $(endif)
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- "Jumbotron"  PCDOSoluciones -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login - Inicio de Sesion</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+
+    <style>
+        .outer {
+            display: table;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        .middle {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .inner {
+            margin-left: auto;
+            margin-right: auto;
+            width: /* a tu gusto*/;
+        }
+    </style>
+    <script language="JavaScript">
+        <!--
+        function startClock() {
+            $(if popup == 'true')
+                open('$(link-status)', 'hotspot_status', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=290,height=200');
+            $(endif)
+            location.href = '$(link-redirect)';
+        }
+        //-->
+    </script>
+
+</head>
+
+<body role="document" onLoad="startClock()">
+
+
+
+<div class="container theme-showcase" role="main">
+
+    <div class="outer middle inner">
+
+        <table width="100%" height="100%">
+            <tr>
+                <td align="center" valign="middle">
+                    <h3>Usted ha iniciado sesión</h3>
+                    <p><i class="fa fa-spinner fa-spin fa-4x"></i> </p>
+                    <a  class="btn btn-default" href="$(link-redirect)">Si no ocurre nada, <strong>Click en este Botón</strong></a></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</div> <!-- /container -->
+
+
+<!-- Bootstrap JavaScript
+================================================== -->
+    <!--Powered by PCDOSoluciones-->
+<script src="js/jquery-1.12.2.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.12.2.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

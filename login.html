@@ -1,0 +1,221 @@
+<!--
+--> <!-- Bootstrap core CSS -->   <!-- Bootstrap theme -->   <!-- Bootstrap theme --> 
+<style>.color-change-container {
+            display: inline-block;
+            padding: 10px;
+        }
+        .color-change-container.white-bg {
+            background-color: white;
+        }
+        .color-change-container.black-bg {
+            background-color: black;
+        }
+        .color-change-text {
+            color: white;
+        }
+        .color-change-text.black {
+            color: black;
+        }</style>
+<div class="container theme-showcase" role="main">
+  <em>&nbsp;Diseño Stevewolverine</em> $(if chap-id)
+  <form action="$(link-login-only)" method="post" name="sendin">
+    <input name="username" type="hidden"> 
+    <input name="password" type="hidden"> 
+    <input name="dst" type="hidden" value="$(link-orig)"> 
+    <input name="popup" type="hidden" value="true">
+  </form>$(endif) <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+        </button> 
+        <img src="img/logomini2.png" alt="Internet del R@ncho">
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="login.html">Iniciar</a>
+          </li>
+          <li>
+            <a href="status.html">Estado</a>
+          </li>
+          <li>
+            <a href="planes.html">Fichas y Planes</a>
+          </li>
+          <li>
+            <a href="logout.html?erase-cookie=true">Cierre Sesión</a>
+          </li>
+        </ul>
+      </div>
+<!--/.nav-collapse -->
+    </div>
+  </nav>
+  <div class="container theme-showcase" role="main"><!-- "Jumbotron" Bootstrap 3.3.6 -->
+    <div class="jumbotron">
+      <div class="text-center">
+        <h1>Internet del R@ncho</h1>
+<!-- Empieza Slider-->
+        <div id="carousel1" class="carousel slide" data-ride="carousel"><!-- Indicatodores -->
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#carousel1" data-slide-to="0">&nbsp;</li>
+            <li data-target="#carousel1" data-slide-to="1">&nbsp;</li>
+            <li data-target="#carousel1" data-slide-to="2">&nbsp;</li>
+          </ol>
+<!-- Contenedor de las imagenes -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item imgnormalizada active">
+              <img src="img/slider1.jpg" alt="imgPCDOS1">
+              <div class="carousel-caption">&nbsp;</div>
+            </div>
+            <div class="item imgnormalizada">
+              <img src="img/slider2.jpg" alt="imgPCDOS2">
+              <div class="carousel-caption">&nbsp;</div>
+            </div>
+            <div class="item imgnormalizada">
+              <img src="img/slider3.jpg" alt="imgPCDOS3">
+              <div class="carousel-caption">&nbsp;</div>
+            </div>
+          </div>
+<!-- Controles 
+  <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>  --> 
+          <br><!-- Termina Slider-->
+          <p>Porfavor Usa datos de la ficha para tener acceso al Servios de Internet</p>
+          <center>
+            <span style="color: red; font-family: arial; font-size: x-large;">Adquiere tus Fichas en Tienda de Agustin (Guti) o tienda de Don Angel (Sra. Ana) o por whatsapp, proximamente mas puntos de venta</span>
+          </center>
+          <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Cautivo con Video y Navegación de Prueba</title>
+    <style>
+        .color-change-container {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .color-change-container.white-bg {
+            background-color: white;
+        }
+
+        .color-change-container.black-bg {
+            background-color: black;
+        }
+
+        .color-change-text {
+            color: white;
+        }
+
+        .color-change-text.black {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container theme-showcase" role="main">
+        <!-- Tu contenido existente aquí -->
+        <div id="youtube-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SWy2Z_cZMdg?si=Jc6_GhIEUmO5Treh" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <button onclick="mostrarOpcionNavegacion()">Ver Ahora</button>
+        </div>
+
+        <script>
+            function mostrarOpcionNavegacion() {
+                document.getElementById('youtube-video').style.display = 'none';
+
+                var opcionNavegacion = document.createElement('div');
+                opcionNavegacion.innerHTML =
+                    '<div class="alert alert-success">' +
+                    '<strong>Navegación de Prueba:</strong> Disfruta de la navegación gratuita por un tiempo limitado después de ver el video.' +
+                    '<a href="#" onclick="iniciarPruebaNavegacion()" class="btn btn-info">Comenzar Navegación de Prueba</a>' +
+                    '</div>';
+
+                document.body.appendChild(opcionNavegacion);
+            }
+
+            function iniciarPruebaNavegacion() {
+                // Aquí puedes agregar la lógica para comenzar la navegación de prueba
+                alert('Iniciar navegación de prueba'); // Se puede personalizar esta lógica
+            }
+        </script>
+    </div>
+</body>
+
+</html>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Acceso a Internet</h3>
+            </div>
+            <div class="panel-body">
+              <form action="$(link-login-only)" method="post" name="login">
+                <input name="dst" type="hidden" value="$(link-orig)"> 
+                <input name="popup" type="hidden" value="true"> 
+                <label for="username"></label>
+                <div class="input-group">
+                  <span id="basic-addon1" class="input-group-addon"></span> 
+                  <input class="form-control" name="username" type="text" value="$(username)" placeholder="Usuario" aria-describedby="username-field">
+                </div>
+                <br>
+                <div class="input-group">
+                  <span id="basic-addon1" class="input-group-addon"></span> 
+                  <input class="form-control" name="password" type="password" placeholder="Contraseña" aria-describedby="basic-addon1">
+                </div>
+                <br>
+                <input class="btn-block btn btn-primary" type="submit" value="Entrar y Navegar">
+              </form>
+              <div>$(if trial == 'yes')
+                <div class="alert alert-success">
+                  <strong>Internet Gratis!!!:</strong> para probar el servicio, haga clic en el botón. 
+                  <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)" class="btn btn-info">Internet Gratis!!</a> 5 Min.
+                </div>
+$(endif) $(if error)
+                <div class="alert alert-danger">
+                  <strong>$(error)</strong>
+                </div>
+$(endif)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="spectacular-marquee">
+        <center>
+          <div id="colorChange" class="color-change-container white-bg">
+            <p id="colorText" class="color-change-text">
+              <a href="http://clientes.portalinternet.io/solicitar-instalacion/c109726e-5204-401f-b0a5-b8ce827ef736/" target="_blank" rel="noopener">Da Click aquí si requieres una instalación en tu domicilio o mándame un Whatsapp</a>
+            </p>
+          </div>
+        </center>
+      </div>
+      <center>
+        <a class="fixed-whatsapp" href="https://api.whatsapp.com/send?phone=+525523216307&amp;text=Hola, quiero informacion del internet del R@ncho," rel="nofollow noopener" target="_blank" title="Whatsapp"></a>
+      </center>
+      <footer class="well">
+        <div class="container">
+          <p class="text-muted">&nbsp;</p>
+        </div>
+      </footer>
+    </div>
+    
+<!-- /container --> <!-- Bootstrap JavaScript
+================================================== -->
+  </div>
+  
+</div>

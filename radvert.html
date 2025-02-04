@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>mikrotik hotspot > advertisement</title>
+<meta http-equiv="refresh" content="2; url=$(link-orig)">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<style type="text/css">
+<!--
+textarea,input,select {
+	background-color: #FDFBFB;
+	border: 1px #BBBBBB solid;
+	padding: 2px;
+	margin: 1px;
+	font-size: 14px;
+	color: #808080;
+}
+
+body{ color: #737373; font-size: 20px; font-family: verdana; }
+
+a, a:link, a:visited, a:active { color: green; text-decoration: none; font-size: 20px; }
+a:hover { border-bottom: 1px dotted #c1c1c1; color: #AAAAAA; }
+img {border: none;}
+td { font-size: 20px; color: #7A7A7A; }
+
+-->
+</style>
+<script language="JavaScript">
+<!--
+    var popup = '';
+    function openOrig() {
+	if (window.focus) popup.focus();
+	location.href = '$(link-orig)';
+    }
+    function openAd() {
+	location.href = '$(link-redirect)';
+    }
+    function openAdvert() {
+	if (window.name != 'hotspot_advert') {
+		popup = open('$(link-redirect)', 'hotspot_advert', '');
+		setTimeout("openOrig()", 1000);
+		return;
+	}
+	setTimeout("openAd()", 1000);
+    }
+//-->
+</script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    
+</head>
+<body onLoad="openAdvert()">
+<table width="100%" height="100%">
+<tr>
+	<td align="center" valign="middle">
+	<h2>Advertisement.</h2>
+	<br><br>
+    <div class="alert alert-danger">
+            <h4>Si no sucede nada abre 
+	<a href="$(link-redirect)" target="hotspot_advert">Aqui...</a>
+	Manual.</h4>
+        </div>
+	</td>
+</tr>
+</table>
+</body>
+    <!--Powered by PCDOSoluciones-->
+</html>

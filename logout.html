@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+     <!--
+*PCDOSoluciones*
+Bootstrap 3.3.6
+© 2018 Gerardo Hernandez
+© 2018 Gerardo Hernandez. Todos los derechos reservados.
+Copyright &copy; 2008 2018 - PCDOSoluciones
+Copr. PCDOSoluciones. Todos los derechos reservados.
+Pijijiapan, Chiapas; Mexico
+-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cierre de Sesion</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+</head>
+
+<body role="document">
+<script language="JavaScript">
+    <!--
+    function openLogin() {
+        if (window.name != 'hotspot_logout') return true;
+        open('$(link-login)', '_blank', '');
+        window.close();
+        return false;
+    }
+    //-->
+</script>
+
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle Navegacion</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Internet del R@ancho</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">Iniciar</a></li>
+                    <li><a href="status.html">Estado</a></li>
+                    <li><a href="planes.html">Fichas y Planes</a></li>
+                    <li class="active"><a href="logout.html?erase-cookie=true">Cierre Sesión</a></li>
+                </ul>
+        </div><!--/.navegacion-collapse -->
+    </div>
+</nav>
+
+<div class="container theme-showcase" role="main">
+
+    <div class="row"><br></div>
+       <!-- "Jumbotron" PCDOSoluciones-->
+    <div class="row">
+        $(if login-by == 'trial')
+        <br><h1>Tu tiempo de Prueba se Termino > Gracias!!</h1><br>
+        $(elif login-by != 'mac')
+        <br><h1>Regresa Pronto! > $(username)!</h1><br>
+        $(endif)
+    </div>
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Estado de Conexión</h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-responsive table-bordered">
+                        <tbody>
+                        <tr><td align="right">Usuario: <i class="glyphicon glyphicon-user"></td><td>$(username)</td></tr>
+                        <tr><td align="right">Dirección IP: <i class="glyphicon glyphicon-phone"></td><td>$(ip)</td></tr>
+                        <tr><td align="right">Dirección MAC: <i class="glyphicon glyphicon-cog"></td><td>$(mac)</td></tr>
+                        <tr><td align="right">Tiempo de Sesión: <i class="glyphicon glyphicon-time"></td><td>$(uptime)</td></tr>
+                        $(if session-time-left)
+                        <tr><td align="right">Tiempo Faltante: <i class="glyphicon glyphicon-time"></td><td>$(session-time-left)</td></tr>
+                        $(endif)
+                        <tr><td align="right">Bytes Usados: Subida/Descarga: <i class="glyphicon glyphicon-transfer"></td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+
+
+                        </tbody>
+                    </table>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="$(link-login)" name="login" onSubmit="return openLogin()">
+                                <input type="submit" value="Volver a Inicio de Sesión" class="btn btn-primary btn-block">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="well">
+        <div class="container">
+            <p class="text-muted">Powered by Stevewolverine</p>
+        </div>
+    </footer>
+
+</div> <!-- /container -->
+
+
+<!-- Bootstrap JavaScript
+================================================== -->
+    <!--Powered by PCDOSoluciones-->
+<script src="js/jquery-1.12.2.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.12.2.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
